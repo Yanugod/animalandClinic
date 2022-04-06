@@ -5,11 +5,11 @@
             </div>
 
             <ul class="hero__links">
-                <li><a href="#home">Home<i class="bi bi-building"></i></a></li>
-                <li><a href="#about">About<i class="bi bi-paperclip"></i></a></li>
-                <li><a href="#">Animal Care<i class="bi bi-bandaid"></i></a></li>
+                <li><a href="#home" class="hero__link">Home<i class="bi bi-building"></i></a></li>
+                <li><a href="#about" class="hero__link">About<i class="bi bi-paperclip"></i></a></li>
+                <li><a href="#" class="hero__link">Animal Care<i class="bi bi-bandaid"></i></a></li>
                 <li><a href="../layout/paciente.html" class="hero__link--patients">Patients<i class="bi bi-file-person"></i></a></li>
-                <li><a href="#">Contact<i class="bi bi-telephone-fill"></i></a></li>
+                <li><a href="#" class="hero__link">Contact<i class="bi bi-telephone-fill"></i></a></li>
             </ul>
 
             <div class="hero__menu-icon">

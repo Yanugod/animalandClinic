@@ -15,7 +15,7 @@
 
 <body>
 
-    <?php include('header.php');?>
+    <?php include('header.php'); ?>
 
     <section id="about" class="hero__about">
         <div class="hero__about-img">
@@ -23,9 +23,7 @@
             <a href="#nada">Read More</a>
         </div>
         <div class="hero__about-texts">
-            <div class="hero__about-title">
-                <h2>About</h2>
-            </div>
+                <h2 class="hero__about-title">About</h2>
             <div class="hero__about-paragraph">
                 <p>Animaland was created by former Minister of Public Health and Sanitation Dr. Rogers Claudelle Johnson
                     in 1978, Hudson, New Jersey.</p>
@@ -44,48 +42,32 @@
     <section class="hero__newness">
         <div class="hero__newness-cards">
             <div class="newness-card">
-                <div class="hero__newmess-title">
-                    <h2>+200k<i class="bi bi-check-all"></i></h2>
-                </div>
-                <div class="hero__newness-paragraph">
-                    <p>Clients trust us.</p>
-                </div>
+                <h2 class="hero__newmess-title">+200k<i class="bi bi-check-all"></i></h2>
+                <p class="hero__newness-paragraph">Clients trust us.</p>
             </div>
         </div>
         <div class="hero__newness-cards">
             <div class="newness-card">
-                <div class="hero__newmess-title">
-                    <h2>+415k<i class="bi bi-currency-exchange"></i></h2>
-                </div>
-                <div class="hero__newness-paragraph">
-                    <p>Contribution raised by anonymous people and volunteers.</p>
-                </div>
+                <h2 class="hero__newmess-title">+415k<i class="bi bi-currency-exchange"></i></h2>
+                <p class="hero__newness-paragraph">Contribution raised by anonymous people and volunteers.</p>
             </div>
         </div>
         <div class="hero__newness-cards newness-cards--red">
             <div class="newness-card">
-                <div class="hero__newmess-title">
-                    <h2>+100k<i class="bi bi-balloon-heart"></i></h2>
-                </div>
-                <div class="hero__newness-paragraph">
-                    <p>Animals saved by us.</p>
-                </div>
+                <h2 class="hero__newmess-title">+100k<i class="bi bi-balloon-heart"></i></h2>
+                <p class="hero__newness-paragraph">Animals saved by us.</p>
             </div>
         </div>
         <div class="hero__newness-cards">
             <div class="newness-card">
-                <div class="hero__newmess-title">
-                    <h2>+55k<i class="bi bi-clipboard2-pulse"></i></h2>
-                </div>
-                <div class="hero__newness-paragraph">
-                    <p>Appointments we receive annually.</p>
-                </div>
+                <h2 class="hero__newmess-title">+55k<i class="bi bi-clipboard2-pulse"></i></h2>
+                <p class="hero__newness-paragraph">Appointments we receive annually.</p>
             </div>
         </div>
     </section>
     </section>
 
-    
+
 
 
     <script src="../src/js/app.js"></script>
