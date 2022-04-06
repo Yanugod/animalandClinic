@@ -1,0 +1,537 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600;800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,700;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Urbanist:wght@500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    scroll-behavior: smooth;
+}
+
+::selection{
+    background: transparent;
+    border: none;
+}
+
+.hero{
+    width: 100%;
+    background: url(../img/perros.png) no-repeat bottom 30px left 550px , url(../icon/wave.svg) no-repeat bottom, linear-gradient(90deg, #c0b079 0%, #d4917e 100%);
+    min-height: 870px;
+    display: flex;
+}
+
+.hero__menu{
+    background-image: linear-gradient(120deg, #c0b079 0%, #db8e79 100%);
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    z-index: 999999999;
+}
+
+.hero__logo{
+    width: 30%;
+}
+
+.hero__logo .hero__img{
+    width: 30%;
+}
+
+.hero__links{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   list-style: none;
+   transition: 1s all;
+}
+
+.menu-toggle{
+    transition: .5s ease-in-out;
+    transform: translateX(0%); 
+}
+
+.hero__links li:hover a{
+    padding-bottom: 5px;
+    border-bottom: 2px solid white;
+ }
+
+.hero__links li a{
+    padding: 10px;
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 20px;
+}
+
+.hero__links li a i,
+.hero__link--patients i {
+    padding-left: 10px;
+    font-size: 1.2em;
+}
+
+
+.hero__link--patients{
+    border: 1px solid;
+    border-radius: 10px;
+    transition: .4s ease-in-out;
+}
+
+.hero__link--patients:hover{
+    border: none;
+    background-color: white;
+    color: #d4917e;
+}
+
+.hero__menu-icon{
+    display: none;
+}
+
+/*=====HEADER PRINCIPAL=====*/
+
+.hero__principal{
+    margin: 0 auto;
+    margin-bottom: 20px;
+    position: relative;
+    top: 150px;
+    width: 50%;
+}
+
+.hero__texts--principal{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+.hero__text{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+}
+
+.hero__title--principal{
+    color:white;
+    font-size: 3em;
+}
+
+.hero__title--principal span{
+    color: #be2121;
+}
+
+.hero__paragraph--principal{
+    color:white;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.hero__btn--principal{
+    width: max-content;
+    color: whitesmoke;
+    text-decoration: none;
+    background-color: #e93737;
+    border-radius: 10px;
+    padding: 10px 25px;
+    font-size: 20px;
+    transition: .5s all;
+}
+
+.hero__btn--principal:hover{
+    background-color: #ca3636;
+}
+
+.hero__container--card{
+    margin: 0 auto;
+    margin-bottom: 20px;
+    position: relative;
+    top: 135px;
+    width: 30%;
+    animation: movimiento-card 2s alternate-reverse infinite ease-in-out;
+}
+
+@keyframes movimiento-card{
+    0%{
+        transform: translateY(-10px);
+    }
+
+    100%{
+        transform: translateY(20px);
+    }
+}
+
+.hero__card{
+    background-color: #fcfafa;
+    box-shadow: 0 0 2px 1px rgba(165, 162, 162, 0.993);
+    border-radius: 10px;
+    padding: 10px 25px;
+    flex-direction: column; 
+}
+
+.hero__title--card{
+    color: #e93737;;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom:6px;
+    font-size: 1.7m;
+}
+
+.hero__title--card span{
+     color: #db8e79;
+    font-size: 2em;
+    text-transform: uppercase; 
+}
+
+.hero__paragraph--card{
+    color: black;
+    font-size: 18px;
+    font-family: 'Space Mono', sans-serif;
+    text-align: justify;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    padding: 5px;
+    padding-bottom: 20px;
+    border-top: 2px solid #db8e79;
+    border-bottom: 2px solid #db8e79;
+    border-radius: 5px;
+    position: relative; 
+}
+
+.hero__paragraph--card span{
+    font-size: 50px;
+    color: #e93737;;
+    font-family: 'Space Mono', sans-serif;
+}
+
+.hero__img--header{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.hero__img--principal{
+    width: 50%;
+    margin: 0 auto;
+    display: none;
+}
+
+/*=====SECCION ABOUT=====*/
+
+.hero__about{
+    width: 95%;
+    min-height: 600px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: white;
+    display: flex;
+    gap: 20px;
+}
+
+.hero__about-dr{
+    display: none;
+}
+
+.hero__about-img{
+    width: 40%;
+    background: linear-gradient(90deg, #c0af7986 0%, #d4917e6b 100%), url(../img/doctor.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    opacity: .8;
+    position: relative;;
+}
+
+.hero__about-img a{
+    padding: 10px 18px;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    background-color: #bd3737;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 5%;
+    left: 175px;
+}
+
+.hero__about-texts{
+    width: 60%;
+    position: relative;
+    top: 50px;
+}
+
+.hero__about-title{
+    font-size: 35px;
+    color: #bb6c57;
+    border-bottom: 8px solid #beb492;
+    width: 10%;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+.hero__about-paragraph{
+    width: 90%;
+    font-size: 21px;
+    font-family: 'Poppins', sans-serif;
+    text-align: justify;
+}
+
+.hero__about-paragraph p{
+    margin-bottom: 5px;
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 500;
+}
+
+.hero__newness{
+    background: linear-gradient(100deg, #c0b079 0%, #d4917e 100%);
+    min-height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+}
+
+.hero__newness-cards{
+    box-shadow: 0 0 2px 1px rgba(187, 184, 184, 0.993);
+    background-color: white;
+    border-radius: 10px;
+    height: 200px;
+    width: 270px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    padding: .1px;
+}
+
+.newness-cards--red{
+    animation: mov-newness-card 2s alternate ease infinite;
+}
+
+.newness-cards--red .hero__newmess-title{
+    color: #be2121;
+}
+
+.hero__newness-cards .newness-card{
+    text-align: center;
+    width: 90%;
+}
+
+.hero__newmess-title{
+    text-align: center;
+    font-size: 35px;
+    color: #c0b079;
+}
+
+.hero__newness-paragraph{
+    font-size: 18px;
+    margin-top: 10px;
+    color: black !important;
+}
+
+
+
+/*=====MOBILE=====*/
+
+@media screen and (max-width: 425px){
+
+    .hero__menu{
+        background-image: linear-gradient(120deg, #c0b079 0%, #db8e79 100%);
+        display: flex;
+        justify-content: space-around;
+        position: fixed;
+        z-index: 999999999;
+    }
+    
+    .hero__logo{
+        padding: 10px;
+        width: 70%;
+    }
+    
+    .hero__logo .hero__img{
+        width: 38%;
+    }
+    
+    .hero__links{
+       display: flex;
+       flex-direction: column;
+       align-content: center;
+       list-style: none;
+       position: absolute;
+       width: 100%;
+       height: 700px;
+       top: 100px;
+       background-image: linear-gradient(180deg, #c0af79f8 0%, #db8e79 100%);
+       transition: .5s ease-in-out; 
+       transform: translateX(-300%);
+       z-index: 99999;
+    }
+    
+    .menu-toggle{
+        transition: .5s ease;
+        transform: translateX(0%); 
+    }
+    
+    .hero__links li{
+        height: 200px;
+        position: relative;
+        top: 25px;
+     } 
+    
+    .hero__links li a{
+        padding: 10px;
+        text-decoration: none;
+        color: whitesmoke;
+        font-size: 20px;
+    }
+    
+    .hero__link--patients{
+        border: 1px solid;
+        border-radius: 10px;
+    }
+    
+    .hero__link--patients:hover{
+        border: none;
+        background-color: white;
+        color: #d4917e;
+    }
+    
+    .hero__menu-icon{
+        background: transparent;
+        color: white;
+        font-size: 30px;
+        padding-right: 20px;
+        width: 30%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+    }
+    
+    .hero__menu-icon i{
+        cursor: pointer;
+    }
+    
+    /*INICIO CONTENIDO*/
+
+    .hero{
+        flex-direction: column;
+        min-height: 1000px;
+    }
+    .hero__principal{
+        order: 1;
+        width: 90%;
+        top: 125px;
+    }
+
+    .hero__texts--principal{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .hero__title--principal{
+        font-size: 30px;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .hero__title--principal span{
+        color: #be2121;
+        font-size: 30px;
+    }
+
+    .hero__paragraph--principal{
+        font-size: 17px;
+        gap: -40px;
+    }
+
+    .hero__btn--principal{
+        font-size: 18px;
+        padding: 10px 15px;
+        margin-bottom: 15px;
+    }
+
+    /*CARD NEWS*/
+    .hero__container--card{
+        width: 90%;
+        top: 140px;
+        padding: .1px;
+    }
+
+    .hero__paragraph--card{
+        font-size: 15px;
+    }
+
+    .hero__img--principal{
+        display: inline-block;
+    }
+
+    /*=====CARD NEWS HEADER=====*/
+
+    .hero__about{
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+        position: relative;
+        top: 0px;
+    }
+
+    .hero__about-img{
+        width: 100%;
+        height: 200px;
+
+    }
+
+    .hero__about--img{
+        width: 50%;
+        visibility: hidden;
+    }
+
+    .hero__about-img a{
+        font-size: 13px;
+        bottom: 5%;
+        left: 125px;
+    }
+
+    .hero__about-texts{
+        width: 100%;
+        top: 3px;
+    }
+
+    .hero__about-title{
+        font-size: 28px;
+        width: 15%;
+        border-bottom: 6px solid #c0b079;
+    }
+
+    .hero__about-paragraph{
+        width: 98%;
+        font-size: 19px;
+    }
+
+    
+    /*=====CARD NEWNESS=====*/
+
+    .hero__newness{
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    .hero__newness-cards{
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .hero__newmess-title{
+        font-size: 25px;
+    }
+
+    .hero__newmess-title i{
+        padding-left: 15px;
+    }
+
+    .hero__newness-paragraph{
+        font-size: 16px;
+    }
+}
