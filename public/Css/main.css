@@ -9,9 +9,8 @@
   scroll-behavior: smooth;
 }
 
-::-moz-selection {
-  background: transparent;
-  border: none;
+::-webkit-scrollbar-thumb{
+  background-color: red;
 }
 
 ::selection {
