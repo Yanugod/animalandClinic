@@ -19,7 +19,7 @@
 
     <section id="about" class="hero__about">
         <div class="hero__about-img">
-            <img src="img/doctor.jpg" class="hero__about-dr" alt="">
+            <img src="" class="hero__about-dr" alt="">
             <a href="#nada">Read More</a>
         </div>
         <div class="hero__about-texts">
@@ -67,10 +67,7 @@
     </section>
     </section>
 
-
-
-
-    <script src="/js/app.js"></script>
+    <script src="js/app.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
