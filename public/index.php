@@ -23,7 +23,7 @@
             <a href="#nada">Read More</a>
         </div>
         <div class="hero__about-texts">
-                <h2 class="hero__about-title">About</h2>
+            <h2 class="hero__about-title">About</h2>
             <div class="hero__about-paragraph">
                 <p>Animaland was created by former Minister of Public Health and Sanitation Dr. Rogers Claudelle Johnson
                     in 1978, Hudson, New Jersey.</p>
@@ -52,7 +52,7 @@
                 <p class="hero__newness-paragraph">Contribution raised by anonymous people and volunteers.</p>
             </div>
         </div>
-        <div class="hero__newness-cards newness-cards--red">
+        <div class="hero__newness-cards">
             <div class="newness-card">
                 <h2 class="hero__newmess-title">+100k<i class="bi bi-balloon-heart"></i></h2>
                 <p class="hero__newness-paragraph">Animals saved by us.</p>
@@ -70,7 +70,7 @@
 
 
 
-    <script src="../src/js/app.js"></script>
+    <script src="/js/app.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
