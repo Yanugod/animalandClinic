@@ -178,116 +178,6 @@
   }
 }
 
-@media screen and (max-width: 425px) {
-  /*INICIO CONTENIDO*/
-  .hero {
-    flex-direction: column;
-    min-height: 1000px;
-    /*CARD NEWS*/
-  }
-  .hero .hero__menu {
-    background-image: linear-gradient(120deg, #c0b079 0%, #db8e79 100%);
-    display: flex;
-    justify-content: space-around;
-    position: fixed;
-    z-index: 999999999;
-  }
-  .hero .hero__menu .hero__logo {
-    padding: 10px;
-    width: 70%;
-  }
-  .hero .hero__menu .hero__logo .hero__img {
-    width: 38%;
-  }
-  .hero .hero__menu .hero__menu-icon {
-    background: transparent;
-    color: white;
-    font-size: 30px;
-    padding-right: 20px;
-    width: 30%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-  }
-  .hero .hero__menu .hero__menu-icon i {
-    cursor: pointer;
-  }
-  .hero .hero__menu .hero__links {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    list-style: none;
-    position: absolute;
-    width: 100%;
-    height: 700px;
-    top: 100px;
-    background-image: linear-gradient(180deg, rgba(192, 175, 121, 0.9725490196) 0%, #db8e79 100%);
-    transition: 0.5s ease-in-out;
-    transform: translateX(-300%);
-    z-index: 99999;
-  }
-  .hero .hero__menu .hero__links .menu-toggle {
-    transform: translateX(0%);
-  }
-  .hero .hero__menu .hero__links li {
-    height: 200px;
-    position: relative;
-    top: 25px;
-  }
-  .hero .hero__menu .hero__links li a {
-    padding: 10px;
-    text-decoration: none;
-    color: whitesmoke;
-    font-size: 20px;
-  }
-  .hero .hero__menu .hero__links .hero__links li .hero__link--patients {
-    border: 1px solid;
-    border-radius: 10px;
-  }
-  .hero .hero__menu .hero__link--patients:hover {
-    border: none;
-    background-color: white;
-    color: #d4917e;
-  }
-  .hero .hero__principal {
-    order: 1;
-    width: 90%;
-    top: 125px;
-  }
-  .hero .hero__principal .hero__texts--principal {
-    flex-direction: column;
-    width: 100%;
-  }
-  .hero .hero__principal .hero__texts--principal .hero__title--principal {
-    font-size: 30px;
-    text-align: center;
-    margin-top: 10px;
-  }
-  .hero .hero__principal .hero__texts--principal .hero__title--principal span {
-    color: #be2121;
-    font-size: 30px;
-  }
-  .hero .hero__principal .hero__texts--principal .hero__title--principal .hero__paragraph--principal {
-    font-size: 17px;
-    gap: -40px;
-  }
-  .hero .hero__principal .hero__texts--principal .hero__title--principal .hero__btn--principal {
-    font-size: 18px;
-    padding: 10px 15px;
-    margin-bottom: 15px;
-  }
-  .hero .hero__container--card {
-    width: 90%;
-    top: 140px;
-    padding: 0.1px;
-  }
-  .hero .hero__container--card .hero__paragraph--card {
-    font-size: 15px;
-  }
-  .hero .hero__container--card .hero__img--principal {
-    display: inline-block;
-  }
-}
 /*=====SECCION ABOUT=====*/
 .hero__about {
   width: 95%;
@@ -398,6 +288,116 @@
 
 /*=====MOBILE=====*/
 @media screen and (max-width: 425px) {
+  .hero {
+    flex-direction: column;
+    min-height: 1000px;
+    /*CARD NEWS*/
+  }
+  .hero .hero__menu {
+    background-image: linear-gradient(120deg, #c0b079 0%, #db8e79 100%);
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    z-index: 999999999;
+  }
+
+  .hero .hero__menu .hero__logo {
+    padding: 10px;
+    width: 70%;
+  }
+  .hero .hero__menu .hero__logo .hero__img {
+    width: 38%;
+  }
+  .hero .hero__menu .hero__menu-icon {
+    background: transparent;
+    color: white;
+    font-size: 30px;
+    padding-right: 20px;
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .hero .hero__menu .hero__menu-icon i {
+    cursor: pointer;
+  }
+  .hero .hero__menu .hero__links {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    list-style: none;
+    position: absolute;
+    width: 100%;
+    height: 700px;
+    top: 100px;
+    background-image: linear-gradient(180deg, rgba(192, 175, 121, 0.9725490196) 0%, #db8e79 100%);
+    transition: 0.5s ease-in-out;
+    transform: translateY(-300%);
+    z-index: 99999;
+  }
+  .menu-toggle{
+        transition: .5s ease;
+        transform: translateX(0%); 
+    }
+  .hero .hero__menu .hero__links li {
+    height: 200px;
+    position: relative;
+    top: 25px;
+  }
+  .hero .hero__menu .hero__links li a {
+    padding: 10px;
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 20px;
+  }
+  .hero .hero__menu .hero__links .hero__links li .hero__link--patients {
+    border: 1px solid;
+    border-radius: 10px;
+  }
+  .hero .hero__menu .hero__link--patients:hover {
+    border: none;
+    background-color: white;
+    color: #d4917e;
+  }
+  .hero .hero__principal {
+    order: 1;
+    width: 90%;
+    top: 125px;
+  }
+  .hero .hero__principal .hero__texts--principal {
+    flex-direction: column;
+    width: 100%;
+  }
+  .hero .hero__principal .hero__texts--principal .hero__title--principal {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .hero .hero__principal .hero__texts--principal .hero__title--principal span {
+    color: #be2121;
+    font-size: 30px;
+  }
+  .hero .hero__principal .hero__texts--principal .hero__title--principal .hero__paragraph--principal {
+    font-size: 17px;
+    gap: -40px;
+  }
+  .hero .hero__principal .hero__texts--principal .hero__title--principal .hero__btn--principal {
+    font-size: 18px;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+  }
+  .hero .hero__container--card {
+    width: 90%;
+    top: 140px;
+    padding: 0.1px;
+  }
+  .hero .hero__container--card .hero__paragraph--card {
+    font-size: 15px;
+  }
+  .hero .hero__container--card .hero__img--principal {
+    display: inline-block;
+  }
+
   .hero__about {
     width: 100%;
     display: flex;
@@ -440,15 +440,13 @@
     margin-top: 15px;
     margin-bottom: 15px;
   }
-
-  .hero__newmess-title {
+  .hero__newness .hero__newness-cards .hero__newmess-title {
     font-size: 50px;
   }
-  .hero__newmess-title i {
+  .hero__newness .hero__newness-cards .hero__newmess-title i {
     padding-left: 15px;
   }
-
-  .hero__newness-paragraph {
+  .hero__newness .hero__newness-cards .hero__newness-paragraph {
     font-size: 15px;
   }
 }

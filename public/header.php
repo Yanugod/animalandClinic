@@ -1,8 +1,8 @@
 <header class="hero">
     <nav class="hero__menu">
-        <div class="hero__logo">
+        <figure class="hero__logo">
             <img src="img/animaland.png" class="hero__img" alt="">
-        </div>
+        </figure>
 
         <ul class="hero__links">
             <li><a href="#home" class="hero__link">Home<i class="bi bi-building"></i></a></li>
