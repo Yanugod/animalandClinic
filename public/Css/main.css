@@ -9,8 +9,9 @@
   scroll-behavior: smooth;
 }
 
-::-webkit-scrollbar-thumb{
-  background-color: red;
+::-moz-selection {
+  background: transparent;
+  border: none;
 }
 
 ::selection {
@@ -161,7 +162,6 @@
     transform: translateY(20px);
   }
 }
-
 @keyframes movimiento-card {
   0% {
     transform: translateY(-10px);
@@ -317,7 +317,7 @@
 
 .newness-cards--red {
   -webkit-animation: mov-newness-card 2s alternate ease infinite;
-          animation: mov-newness-card 2s alternate ease infinite;
+  animation: mov-newness-card 2s alternate ease infinite;
 }
 
 .newness-cards--red .hero__newmess-title {
@@ -528,6 +528,7 @@
   .hero__newmess-title {
     font-size: 50px;
   }
+
   .hero__newmess-title .hero__newmess-title i {
     padding-left: 15px;
   }
@@ -535,4 +536,5 @@
   .hero__newness-paragraph {
     font-size: 15px;
   }
-}/*# sourceMappingURL=main.css.map */
+}
+/*# sourceMappingURL=main.css.map *//*# sourceMappingURL=main.css.map */
