@@ -1,0 +1,39 @@
+.hero__newness {
+    background: linear-gradient(100deg, #c0b079 0%, #d4917e 100%);
+    min-height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    .hero__newness-cards {
+        box-shadow: 0 0 2px 1px rgba(187, 184, 184, 0.993);
+        background-color: white;
+        border-radius: 10px;
+        height: 200px;
+        width: 270px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 0.1px;
+
+        .newness-card {
+            text-align: center;
+            width: 90%;
+
+            .hero__newmess-title {
+                text-align: center;
+                font-size: 45px;
+                color: #c0b079;
+            }
+
+            .hero__newness-paragraph {
+                font-size: 15px;
+                margin-top: 10px;
+                color: black !important;
+            }
+        }
+    }
+}
