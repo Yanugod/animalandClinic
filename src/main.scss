@@ -42,20 +42,6 @@
         }
       }
 
-      .hero__menu-icon {
-        background: transparent;
-        color: white;
-        font-size: 30px;
-        padding-right: 20px;
-        width: 30%;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-
-        i {
-          cursor: pointer;
-        }
-
         .hero__links {
           display: flex;
           flex-direction: column;
@@ -69,11 +55,6 @@
           transition: 0.5s ease-in-out;
           transform: translateX(-300%);
           z-index: 99999;
-
-        }
-
-        .menu-toggle {
-          transform: translateX(0%);
         }
 
         li {
@@ -88,6 +69,20 @@
             font-size: 20px;
           }
         }
+
+        .hero__menu-icon {
+          background: transparent;
+          color: white;
+          font-size: 30px;
+          padding-right: 20px;
+          width: 30%;
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+  
+          i {
+            cursor: pointer;
+          }
       }
 
       .hero__links .hero__links li .hero__link--patients {
@@ -151,6 +146,9 @@
     }
   }
 
+  .menu-toggle{
+    transform: translateX(0%); 
+  }
 
   .hero__about {
     width: 100%;
