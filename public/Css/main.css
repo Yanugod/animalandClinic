@@ -300,13 +300,37 @@
     position: fixed;
     z-index: 999999999;
   }
-
   .hero .hero__menu .hero__logo {
     padding: 10px;
     width: 70%;
   }
   .hero .hero__menu .hero__logo .hero__img {
     width: 38%;
+  }
+  .hero .hero__menu .hero__links {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    list-style: none;
+    position: absolute;
+    width: 100%;
+    height: 700px;
+    top: 100px;
+    background-image: linear-gradient(180deg, rgba(192, 175, 121, 0.9725490196) 0%, #db8e79 100%);
+    transition: 0.5s ease-in-out;
+    transform: translateX(-300%);
+    z-index: 99999;
+  }
+  .hero .hero__menu li {
+    height: 200px;
+    position: relative;
+    top: 25px;
+  }
+  .hero .hero__menu li a {
+    padding: 10px;
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 20px;
   }
   .hero .hero__menu .hero__menu-icon {
     background: transparent;
@@ -320,35 +344,6 @@
   }
   .hero .hero__menu .hero__menu-icon i {
     cursor: pointer;
-  }
-  .hero .hero__menu .hero__links {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    list-style: none;
-    position: absolute;
-    width: 100%;
-    height: 700px;
-    top: 100px;
-    background-image: linear-gradient(180deg, rgba(192, 175, 121, 0.9725490196) 0%, #db8e79 100%);
-    transition: 0.5s ease-in-out;
-    transform: translateY(-300%);
-    z-index: 99999;
-  }
-  .menu-toggle{
-        transition: .5s ease;
-        transform: translateX(0%); 
-    }
-  .hero .hero__menu .hero__links li {
-    height: 200px;
-    position: relative;
-    top: 25px;
-  }
-  .hero .hero__menu .hero__links li a {
-    padding: 10px;
-    text-decoration: none;
-    color: whitesmoke;
-    font-size: 20px;
   }
   .hero .hero__menu .hero__links .hero__links li .hero__link--patients {
     border: 1px solid;
@@ -396,6 +391,10 @@
   }
   .hero .hero__container--card .hero__img--principal {
     display: inline-block;
+  }
+
+  .menu-toggle {
+    transform: translateX(0%);
   }
 
   .hero__about {
