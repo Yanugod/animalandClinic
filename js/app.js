@@ -1,8 +1,6 @@
-const iconoMenu = document.querySelector(".hero__menu-icon");
+const iconoMenu = document.querySelector(".menu-bar");
 const menu = document.querySelector(".hero__links");
 
-iconoMenu.addEventListener("Click", () => {
+iconoMenu.addEventListener("click", () => {
   menu.classList.toggle("menu-toggle");
-});
-
-console.log("funciono otra");
+ });
