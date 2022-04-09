@@ -29,14 +29,13 @@
                 <a href="#" class="hero__btn--principal">Schedule a date <i class="bi bi-calendar-heart"></i></a>
             </div>
         </div>
-    </section>
+    </section> 
+
+    
     <section class="hero__container--card" id="home">
         <div class="hero__card">
             <h2 class="hero__title--card">News <br> <span>Animaland</span></h2>
             <p class="hero__paragraph--card"><span>50%</span> to new patients without exception of animals.</p>
-            <figure class="hero__img--header">
-                <img src="icon/imagen.svg" alt="" class="hero__img--principal">
-            </figure>
         </div>
     </section>
 </header>
