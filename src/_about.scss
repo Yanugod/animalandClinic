@@ -1,65 +1,73 @@
 /*=====SECCION ABOUT=====*/
+$primaryFont: "Poppins",
+sans-serif;
+
 .hero__about {
-    width: 95%;
-    min-height: $heightContent;
-    margin: 0 auto;
-    margin-bottom: 20px;
-    padding: 20px;
-    background-color: white;
+  width: 95%;
+  min-height: 600px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: white;
+  display: flex;
+  gap: 20px;
+
+
+  .hero__about-texts {
+    width: 100%;
+    position: relative;
     display: flex;
-    gap: 20px;
+    flex-direction: column;
 
-    .hero__about-img {
-        width: 40%;
-        background: linear-gradient(90deg, rgba(192, 175, 121, 0.5254901961) 0%, rgba(212, 145, 126, 0.4196078431) 100%), url(../img/doctor.jpg) no-repeat;
-        background-size: cover;
-        background-position: center;
-        border-radius: 15px;
-        opacity: 0.8;
-        position: relative;
-
-        hero__about-dr {
-            display: none;
-        }
-
-        a {
-            padding: 10px 18px;
-            font-size: 20px;
-            color: white;
-            text-decoration: none;
-            background-color: #bd3737;
-            border-radius: 5px;
-            position: absolute;
-            bottom: 5%;
-            left: 175px;
-        }
+    .hero__about-title {
+      font-size: 50px;
+      color: #bb6c57;
+      border-bottom: 8px solid #8d7e4e;
+      width: 10%;
+      padding-bottom: 5px;
+      margin-bottom: 20px;
     }
 
-    .hero__about-texts {
-        width: 60%;
-        position: relative;
-        top: 50px;
+    .hero__about-paragraph {
+      text-align: justify;
+      top: 50px;
+      position: relative;
 
-        .hero__about-title {
-            font-size: 35px;
-            color: #bb6c57;
-            border-bottom: 8px solid #8d7e4e;
-            width: 10%;
-            padding-bottom: 5px;
-            margin-bottom: 20px;
-        }
-
-        .hero__about-paragraph {
-            width: 90%;
-            font-size: 21px;
-            font-family: "Poppins", sans-serif;
-            text-align: justify;
-
-            p {
-                margin-bottom: 5px;
-                font-family: "Urbanist", sans-serif;
-                font-weight: 500;
-            }
-        }
+      p {
+        font-size: 21px;
+        margin-bottom: 5px;
+        font-family: $primaryFont;
+        font-weight: 500;
+      }
     }
+  }
+}
+
+.hero__about-img {
+  width: 40%;
+  background: linear-gradient(90deg,
+      rgba(192, 175, 121, 0.5254901961) 0%,
+      rgba(212, 145, 126, 0.4196078431) 100%),
+    url(../img/doctor.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  opacity: 0.8;
+  position: relative;
+
+  .hero__about-dr {
+    display: none;
+  }
+
+  a {
+    padding: 10px 18px;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    background-color: #bd3737;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 5%;
+    left: 110px;
+  }
 }

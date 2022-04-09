@@ -5,7 +5,6 @@
 @import "about";
 @import "newness";
 
-
 * {
   margin: 0;
   padding: 0;
@@ -14,14 +13,18 @@
   scroll-behavior: smooth;
 }
 
+
 ::selection {
   background: transparent;
   border: none;
 }
 
+
+
 /*=====MOBILE=====*/
 @media screen and (max-width: 425px) {
 
+  /*INICIO CONTENIDO*/
   .hero {
     flex-direction: column;
     min-height: 1000px;
@@ -37,25 +40,25 @@
         padding: 10px;
         width: 70%;
 
-        .hero__img {
+        .hero__logo .hero__img {
           width: 38%;
         }
       }
 
-        .hero__links {
-          display: flex;
-          flex-direction: column;
-          align-content: center;
-          list-style: none;
-          position: absolute;
-          width: 100%;
-          height: 700px;
-          top: 100px;
-          background-image: linear-gradient(180deg, rgba(192, 175, 121, 0.9725490196) 0%, #db8e79 100%);
-          transition: 0.5s ease-in-out;
-          transform: translateX(-300%);
-          z-index: 99999;
-        }
+
+      .hero__links {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        list-style: none;
+        position: absolute;
+        width: 100%;
+        height: 90vh;
+        top: 100px;
+        background-image: linear-gradient(180deg, rgba(192, 175, 121, 0.9725490196) 0%, #db8e79 100%);
+        transition: 0.9s ease;
+        transform: translateX(-300%);
+        z-index: 99999;
 
         li {
           height: 200px;
@@ -70,30 +73,36 @@
           }
         }
 
-        .hero__menu-icon {
-          background: transparent;
-          color: white;
-          font-size: 30px;
-          padding-right: 20px;
-          width: 30%;
-          display: flex;
-          justify-content: flex-end;
-          align-items: center;
-  
-          i {
-            cursor: pointer;
-          }
+        .hero__link--patients {
+          border: 1px solid;
+          border-radius: 10px;
+        }
+
+        .hero__link--patients:hover {
+          border: none;
+          background-color: white;
+          color: #d4917e;
+        }
       }
 
-      .hero__links .hero__links li .hero__link--patients {
-        border: 1px solid;
-        border-radius: 10px;
+      .hero__menu-icon {
+        background: transparent;
+        color: white;
+        font-size: 30px;
+        padding-right: 20px;
+        width: 30%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        i {
+          cursor: pointer;
+        }
       }
 
-      .hero__link--patients:hover {
-        border: none;
-        background-color: white;
-        color: #d4917e;
+      .menu-toggle {
+        transition: 0.5s ease-in;
+        transform: translateX(0%);
       }
     }
 
@@ -115,41 +124,34 @@
             color: #be2121;
             font-size: 30px;
           }
+        }
 
-          .hero__paragraph--principal {
-            font-size: 17px;
-            gap: -40px;
-          }
+        .hero__paragraph--principal {
+          font-size: 17px;
+          gap: -40px;
+        }
 
-          .hero__btn--principal {
-            font-size: 18px;
-            padding: 10px 15px;
-            margin-bottom: 15px;
-          }
+        .hero__btn--principal {
+          font-size: 18px;
+          padding: 10px 15px;
+          margin-bottom: 15px;
         }
       }
     }
 
-    /*CARD NEWS*/
-    .hero__container--card {
-      width: 90%;
-      top: 140px;
-      padding: 0.1px;
+  }
+  /*CARD NEWS*/
+  .hero__container--card {
+    width: 90%;
+    top: 140px;
+    padding: 0.1px;
 
-      .hero__paragraph--card {
-        font-size: 15px;
-      }
-
-      .hero__img--principal {
-        display: inline-block;
-      }
+    .hero__paragraph--card {
+      font-size: 15px;
     }
   }
 
-  .menu-toggle{
-    transform: translateX(0%); 
-  }
-
+  /*=====SECCION ABOUT=====*/
   .hero__about {
     width: 100%;
     display: flex;
@@ -160,10 +162,6 @@
     .hero__about-img {
       width: 100%;
       height: 200px;
-
-      .hero__about-dr {
-        display: none;
-      }
 
       a {
         font-size: 13px;
@@ -177,14 +175,14 @@
       top: 3px;
 
       .hero__about-title {
-        font-size: 28px;
+        font-size: 34px;
         width: 15%;
         border-bottom: 6px solid #c0b079;
       }
 
       .hero__about-paragraph {
         width: 98%;
-        font-size: 19px;
+        font-size: 15px;
       }
     }
   }
@@ -197,20 +195,19 @@
     .hero__newness-cards {
       margin-top: 15px;
       margin-bottom: 15px;
+    }
 
-      .hero__newmess-title {
-        font-size: 50px;
+    .hero__newmess-title {
+      font-size: 50px;
+    }
 
-        i {
-          padding-left: 15px;
-        }
-      }
+    .hero__newmess-title .hero__newmess-title i {
+      padding-left: 15px;
+    }
 
-      .hero__newness-paragraph {
-        font-size: 15px;
-      }
+    .hero__newness-paragraph {
+      font-size: 15px;
     }
   }
-}
 
-/*# sourceMappingURL=main.css.map */
+}
